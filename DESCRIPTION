@@ -1,0 +1,16 @@
+Package: nistbeacon
+Type: Package
+Title: Wrapper for NIST Randomness Beacon
+Version: 0.1.0
+Authors@R: c(
+    person("Chris", "Hua", email = "hua.christopher@gmail.com", role = c("aut", "cre"))
+    )
+Description: Provides methods for accessing the NIST Randomness Beacon,
+    a source of public randomness. See the NIST page for more details:
+    https://www.nist.gov/programs-projects/nist-randomness-beacon
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: httr,
+    xml2
+RoxygenNote: 6.0.1
