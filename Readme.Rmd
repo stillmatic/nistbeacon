@@ -1,0 +1,24 @@
+---
+title: "nistbeacon"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# nistbeacon
+
+An R package for accessing the [NIST Randomness Beacon](https://www.nist.gov/programs-projects/nist-randomness-beacon).
+
+NIST Beacon objects are represented as XML documents remotely. For convenience, we parse and manifest them locally as R lists.
+
+# Installation
+
+```{r, eval=F}
+if(!require(devtools)) {
+    install.packages(devtools)
+}
+devtools::install_github("stillmatic/nistbeacon")
+```
+

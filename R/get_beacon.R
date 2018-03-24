@@ -65,3 +65,17 @@ beacon_start_chain <- function(ds) {
     beacon_url <- sprintf("https://beacon.nist.gov/rest/record/start-chain/%s", ds)
     process_beacon_url(beacon_url)
 }
+
+#' Validate beacon object
+#'
+#' @param x beacon object
+#'
+#' @return boolean; TRUE if input is a valid beacon object.
+#' @export
+#'
+#' @examples
+#' y <- beacon(1500679537)
+#' beacon_validate(y)
+beacon_validate <- function(x) {
+    msg <- paste0(x$version, x$frequency, x$timeStamp, x$seedValue, x$previousOutputValue)
+}
